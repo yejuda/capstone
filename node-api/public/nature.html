@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with Steller landing page.">
+  <meta name="author" content="Devcrud">
+  <title>castone | plan-it</title>
+  <!-- font icons -->
+  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+  <!-- Bootstrap + Steller main styles -->
+  <link rel="stylesheet" href="assets/css/nature_css.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+  <!-- Page navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/imgs/planit.jpg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link">
+              당신만을 위한 단 하나의 여행코스
+              <i class="icon ti-comments-smiley"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- End of page navibation -->
+
+  <!-- Page Header -->
+
+  <!-- Blog Section -->
+  <header class="heade" id="home">
+    <div class="container"></div>
+  </header>
+
+  <header class="header1" id="home">
+    <button onclick="scrollToTop()" class="scroll-top-button"><i class="icon ti-arrow-up"></i></button>
+
+    <div class="mainex">
+      <h6>&nbsp;&nbsp;&nbsp;이런 곳은 어때요?</h6>
+      <br>
+      <br>
+    </div>
+    <div class="container">
+      <div class="img-set">
+        <div class="img-1">
+          <h6>서울숲</h6>
+          <a href="#fi">
+            <img class="slide2" src="assets/imgs/서울숲/2.PNG">
+          </a>
+        </div>
+        <div class="img-1">
+          <h6>아차산</h6>
+          <a href="#se">
+            <img class="slide2" src="assets/imgs/아차산/5.PNG">
+          </a>
+        </div>
+        <div class="img-1">
+          <h6>하늘공원</h6>
+          <a href="#th">
+            <img class="slide2" src="assets/imgs/하늘공원/9.PNG">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="heade" id="fi">
+    <div class="container"></div>
+  </header>
+  <div class="container123">
+    <section class="section1">
+      <div id="overlay" class="overlay" onclick="hideOverlay()">
+        <img src="" alt="큰 이미지">
+        <p></p>
+        <button class="custom-button">더보기</button>
+      </div>
+      <div class="gallery-container">
+        <div class="mainname">
+          <h6 id="imageName">서울숲</h6>
+        </div>
+        <img class="main-image" id="mainImage1" src="assets/imgs/서울숲/2.PNG" alt="서울숲">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="assets/imgs/서울숲/2.PNG" alt="서울숲" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/서울숲/1.PNG" alt="서울숲" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/서울숲/3.PNG" alt="서울숲" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/서울숲/4.PNG" alt="서울숲" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/서울숲/5.PNG" alt="서울숲" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/서울숲/6.PNG" alt="서울숲" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/서울숲/7.PNG" alt="서울숲" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/서울숲/8.PNG" alt="서울숲" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/서울숲/9.PNG" alt="서울숲" onclick="changeMainImage1(this)">
+          <!-- 나머지 작은 이미지들도 추가 -->
+        </div>
+        <div class="exp" id="imageDescription">
+          서울특별시 성동구 성수동1가에 있는 테마공원.
+          <br>
+          2005년 6월 18일에 개원하여 2016년 11월 1일부터 2021년 12월 31일까지 (재)서울그린트러스트의 서울숲컨서번시가 수탁 관리 및 운영했다.
+          <br>
+          2022년 1월 1일부터는 서울특별시 공원녹지과에서 관리 및 운영하고 있다.
+        </div>
+        <div class="exp1">
+          <button class="custom-button" onclick="openLinkSite1()">네이버 리뷰</button>
+          <button class="custom-button" onclick="openLinkSite2()">구글 리뷰&nbsp;</button>
+        </div>
+      </div>
+
+
+      <script>
+        function openLinkSite1() {
+          window.open("https://map.naver.com/v5/entry/place/11636039?lng=127.03856630000425&lat=37.54196449817399&placePath=%2Freview%2Fvisitor&entry=plt&c=14.89,0,0,0,dh", "_blank");
+        }
+        function openLinkSite2() {
+          window.open("https://www.google.co.kr/search?q=%EC%84%9C%EC%9A%B8%EC%88%B2&sxsrf=APwXEdcBm2C2GP2rjPGxKNHM7qk7CqO5ig%3A1684214267624&source=hp&ei=-xFjZMPfI8jY-QawqqOwBQ&iflsig=AOEireoAAAAAZGMgCymiarp5ccPe79UgyK48ImiOpfoV&ved=0ahUKEwiDyZSJi_n-AhVIbN4KHTDVCFYQ4dUDCAs&uact=5&oq=%EC%84%9C%EC%9A%B8%EC%88%B2&gs_lcp=Cgdnd3Mtd2l6EAMyEQguEIMBEK8BEMcBELEDEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyCwguEIAEEMcBEK8BMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIIxDqAhAnOgcIIxCKBRAnOgQIIxAnOgsIABCABBCxAxCDAToLCC4QgAQQsQMQgwE6BQguEIAEOgQIABADOgcILhADENQCOhEILhCABBCxAxCDARDHARDRAzoLCC4QgwEQsQMQgAQ6CAguEIAEELEDOgQIABAeOgYIABAeEA86BggAEAgQHjoJCAAQBRAeEPEEOgYIABAFEB5Q3xJYzT9gtUFoC3AAeAeAAe8CiAH0HJIBCDAuMTguMS4xmAEAoAEBsAEK&sclient=gws-wiz#lrd=0x357ca37d51f4f62b:0xdd9b9865be0f469a,1,,,,", "_blank");
+        }
+        function changeMainImage1(image) {
+          var mainImage = document.getElementById('mainImage1');
+          mainImage.src = image.src;
+          var imageNameElement = document.getElementById('imageName');
+          var imageName = image.alt;
+          imageNameElement.textContent = imageName;
+
+        }
+      </script>
+    </section>
+    <section class="section2">
+
+      <div class="sub">
+        <h6>주변 맛집</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/서울숲/식당/꾸아/3.jpg" onclick="showOverlay('assets/imgs/서울숲/식당/꾸아/3.jpg', '꾸아', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1846605156?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(1)">
+            <img class="thumbnail" src="assets/imgs/서울숲/식당/난포/3.jpg" onclick="showOverlay('assets/imgs/서울숲/식당/난포/3.jpg', '난포', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1910927846?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(2)">
+            <img class="thumbnail" src="assets/imgs/서울숲/식당/미테이블/3.jpg" onclick="showOverlay('assets/imgs/서울숲/식당/미테이블/3.jpg', '미테이블', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/38590315?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(3)">
+            <img class="thumbnail" src="assets/imgs/서울숲/식당/서울숲 포도피자/3.jpg" onclick="showOverlay('assets/imgs/서울숲/식당/서울숲 포도피자/3.jpg', '포도피자', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1574521874?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(4)">
+            <img class="thumbnail" src="assets/imgs/서울숲/식당/스시도쿠/3.jpg" onclick="showOverlay('assets/imgs/서울숲/식당/스시도쿠/3.jpg', '스시도쿠', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1029146941?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(5)">
+            <img class="thumbnail" src="assets/imgs/서울숲/식당/온량/온량 음식사진2.jpg" onclick="showOverlay('assets/imgs/서울숲/식당/온량/3.jpg', '온량', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1584576344?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(6)">
+          </div>
+        </div>
+
+      </div>
+      <div class="sub" id="bord">
+        <h6>주변 카페</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/서울숲/카페/5to7/3.png" onclick="showOverlay('assets/imgs/서울숲/카페/5to7/3.png', '5to7', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/1508243090?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(7)">
+            <img class="thumbnail" src="assets/imgs/서울숲/카페/구욱희씨/구욱희씨_3.png" onclick="showOverlay('assets/imgs/서울숲/카페/구욱희씨/구욱희씨_3.png', '구욱회씨', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/1712521730?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(8)">
+            <img class="thumbnail" src="assets/imgs/서울숲/카페/뉴앳던성수/뉴앳던 성수_3.jpeg" onclick="showOverlay('assets/imgs/서울숲/카페/뉴앳던성수/뉴앳던 성수_3.jpeg', '뉴앳던 성수', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/1789793457?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(9)">
+            <img class="thumbnail" src="assets/imgs/서울숲/카페/밀도/밀도_3.png" onclick="showOverlay('assets/imgs/서울숲/카페/밀도/밀도_3.png', '밀도', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/37717085?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(10)">
+            <img class="thumbnail" src="assets/imgs/서울숲/카페/봉땅/봉땅_3.png" onclick="showOverlay('assets/imgs/서울숲/카페/봉땅/봉땅_3.png', '봉땅', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/1700801654?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(11)">
+            <img class="thumbnail" src="assets/imgs/서울숲/카페/브레디포스트/브레디포스트_3.png" onclick="showOverlay('assets/imgs/서울숲/카페/브레디포스트/브레디포스트_3.png', '브레디포스트', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/1020816080?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(12)">
+          </div>
+        </div>
+      </div>
+      <div class="sub" id="bord">
+        <h6>주변 놀거리</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/서울숲/놀거리/더서울라이티움/1.jpeg" onclick="showOverlay('assets/imgs/서울숲/놀거리/더서울라이티움/1.jpeg', '더서울라이티움', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/448283373?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(13)">
+            <img class="thumbnail" src="assets/imgs/서울숲/놀거리/더페이지갤러리/1.jpeg" onclick="showOverlay('assets/imgs/서울숲/놀거리/더페이지갤러리/1.jpeg', '더페이지갤러리', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/13051123?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(14)">
+            <img class="thumbnail" src="assets/imgs/서울숲/놀거리/디뮤지엄/1.jpeg" onclick="showOverlay('assets/imgs/서울숲/놀거리/디뮤지엄/1.jpeg', '디뮤지엄', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/36992369?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(15)">
+            <img class="thumbnail" src="assets/imgs/서울숲/놀거리/뚝섬미술관/1.jpeg" onclick="showOverlay('assets/imgs/서울숲/놀거리/뚝섬미술관/1.jpeg', '뚝섬미술관', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/1479550856?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(16)">
+            <img class="thumbnail" src="assets/imgs/서울숲/놀거리/무신사테라스성수/1.png" onclick="showOverlay('assets/imgs/서울숲/놀거리/무신사테라스성수/1.png', '무신사테라스성수', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/1573780452?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(17)">
+            <img class="thumbnail" src="assets/imgs/서울숲/놀거리/밑미홈/1.jpeg" onclick="showOverlay('assets/imgs/서울숲/놀거리/밀미홈/1.jpeg', '밀미홈', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%88%B2%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/1282574554?c=12,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(18)">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <header class="heade" id="se">
+    <div class="container"></div>
+  </header>
+
+  <div class="container123">
+    <section class="section1">
+      <div class="gallery-container">
+        <div class="mainname">
+          <h6 id="imageName">아차산</h6>
+        </div>
+        <img class="main-image" id="mainImage2" src="assets/imgs/아차산/5.PNG" alt="아차산">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="assets/imgs/아차산/5.PNG" alt="아차산" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/아차산/2.PNG" alt="아차산" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/아차산/3.PNG" alt="아차산" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/아차산/4.PNG" alt="아차산" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/아차산/1.JPG" alt="아차산" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/아차산/6.PNG" alt="아차산" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/아차산/7.PNG" alt="아차산" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/아차산/8.PNG" alt="아차산" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/아차산/9.PNG" alt="아차산" onclick="changeMainImage2(this)">
+          <!-- 나머지 작은 이미지들도 추가 -->
+        </div>
+        <div class="exp" id="imageDescription">
+          <br>
+          峨嵯山 Achasan(Acha Mountain)
+          <br>
+          서울특별시 광진구와 경기도 구리시를 잇는 높이 295.7m의 산. '阿且山'이라고도 쓴다.
+        </div>
+        <div class="exp1">
+          <button class="custom-button" onclick="openLinkSite3()">네이버 리뷰</button>
+          <button class="custom-button" onclick="openLinkSite4()">구글 리뷰&nbsp;</button>
+        </div>
+      </div>
+
+
+      <script>
+        function openLinkSite3() {
+          window.open("https://map.naver.com/v5/entry/place/11491459?lng=127.1027414&lat=37.56684539999999&placePath=%2Freview%2Fvisitor&entry=plt", "_blank");
+        }
+        function openLinkSite4() {
+          window.open("https://www.google.co.kr/search?q=%EC%95%84%EC%B0%A8%EC%82%B0&sxsrf=APwXEdehS5_k2lachK959RCqqAYVlBXZWw%3A1684214553962&ei=GRNjZOCtOpb5wAOe7baQCQ&ved=0ahUKEwigntuRjPn-AhWWPHAKHZ62DZIQ4dUDCA8&uact=5&oq=%EC%95%84%EC%B0%A8%EC%82%B0&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIHCCMQigUQJzIQCC4QFBCDARCHAhCxAxCABDILCC4QgAQQxwEQrwEyCwguEIAEEMcBEK8BMgsILhCvARDHARCABDILCC4QgAQQxwEQrwEyBQgAEIAEMg4ILhCABBDHARCvARDUAjIFCAAQgAQyHgguEBQQgwEQhwIQsQMQgAQQlwUQ3AQQ3gQQ4AQYAToHCCMQsAMQJzoKCAAQRxDWBBCwAzoECCMQJzoLCAAQgAQQsQMQgwFKBAhBGABQ6wJYvAlgwApoA3AAeAKAAZMEiAHJEJIBBzMtMi4xLjKYAQCgAQHIAQrAAQHaAQYIARABGBQ&sclient=gws-wiz-serp#lrd=0x357cbaeca8994c7f:0x88324291fd97fd86,1,,,,", "_blank");
+        }
+        function changeMainImage2(image) {
+          var mainImage = document.getElementById('mainImage2');
+          mainImage.src = image.src;
+          var imageNameElement = document.getElementById('imageName');
+          var imageName = image.alt;
+          imageNameElement.textContent = imageName;
+        }
+      </script>
+    </section>
+    <section class="section2">
+      <div class="sub">
+        <h6>주변 식당</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/아차산/식당/마시쏘부대찌개/다운로드 (1).jpg" alt="마시쏘부대찌개" onclick="showOverlay('assets/imgs/아차산/식당/마시쏘부대찌개/다운로드 (1).jpg', '마시쏘부대찌개', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1231048942?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll%2526n_ad_group_type%253D10%2526n_query%253D%25EC%2595%2584%25EC%25B0%25A8%25EC%2582%25B0%25EA%25B7%25BC%25EC%25B2%2598%25EB%25A7%259B%25EC%25A7%2591'); imageClicked(19)">
+            <img class="thumbnail" src="assets/imgs/아차산/식당/망향비빔국수/다운로드 (1).jpg"alt="망향비빔국수" onclick="showOverlay('assets/imgs/아차산/식당/망향비빔국수/다운로드 (1).jpg', '망향비빔국수', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/13047580?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(20)">
+            <img class="thumbnail" src="assets/imgs/아차산/식당/멕시칼리/다운로드 (1).jpg"alt="멕시칼리" onclick="showOverlay('assets/imgs/아차산/식당/멕시칼리/다운로드 (1).jpg', '멕시칼리', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1111031959?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(21)">
+            <img class="thumbnail" src="assets/imgs/아차산/식당/비스타 워커힐 서울 피자힐/다운로드 (1).jpg"alt="비스타 워커힐 서울 피자힐" onclick="showOverlay('assets/imgs/아차산/식당/비스타 워커힐 서울 피자힐/다운로드 (1).jpg', '비스타 워커힐 서울 피자힐', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/11611438?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(22)">
+            <img class="thumbnail" src="assets/imgs/아차산/식당/순금이떡볶이/다운로드 (1).jpg"alt="순금이떡볶이" onclick="showOverlay('assets/imgs/아차산/식당/순금이떡볶이/다운로드 (1).jpg', '순금이떡볶이', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/31747148?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(23)">
+            <img class="thumbnail" src="assets/imgs/아차산/식당/아차산김가네맛집/다운로드 (1).jpg"alt="아차산김가네맛집" onclick="showOverlay('assets/imgs/아차산/식당/아차산김가네맛집/다운로드 (1).jpg', '아차산김가네맛집', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/20874682?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll%2526n_ad_group_type%253D10%2526n_query%253D%25EC%2595%2584%25EC%25B0%25A8%25EC%2582%25B0%25EA%25B7%25BC%25EC%25B2%2598%25EB%25A7%259B%25EC%25A7%2591'); imageClicked(24)">
+          </div>
+        </div>
+      </div>
+      <div class="sub"id="bord">
+        <h6>주변 카페</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/아차산/카페/RADIANT/다운로드 (1).jpg"alt="RADIANT" onclick="showOverlay('assets/imgs/아차산/카페/RADIANT/다운로드 (1).jpg', 'RADIANT', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/37996680?c=13,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(25)">
+            <img class="thumbnail" src="assets/imgs/아차산/카페/버글러커피/다운로드 (1).jpg"alt="버글러커피" onclick="showOverlay('assets/imgs/아차산/카페/버글러커피/다운로드 (1).jpg', '버글러커피', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/1976895148?c=13,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(26)">
+            <img class="thumbnail" src="assets/imgs/아차산/카페/빛의라운지/다운로드 (1).jpg"alt="빛의라운지" onclick="showOverlay('assets/imgs/아차산/카페/빛의라운지/다운로드 (1).jpg', '빛의라운지', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/1767557389?c=13,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(27)">
+            <img class="thumbnail" src="assets/imgs/아차산/카페/솔티드/다운로드 (1).jpg"alt="솔티드" onclick="showOverlay('assets/imgs/아차산/카페/솔티드/다운로드 (1).jpg', '솔티드', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/1566098855?c=13,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(28)">
+            <img class="thumbnail" src="assets/imgs/아차산/카페/시드누아/다운로드 (3).jpg"alt="시드누아" onclick="showOverlay('assets/imgs/아차산/카페/시드누아/다운로드 (3).jpg', '시드누아', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/37789719?c=13,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(29)">
+            <img class="thumbnail" src="assets/imgs/아차산/카페/실란트로커피/다운로드 (1).jpg"alt="실란트로커피" onclick="showOverlay('assets/imgs/아차산/카페/실란트로커피/다운로드 (1).jpg', '실란트로커피', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EC%B9%B4%ED%8E%98/place/66005003?c=13,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(30)">
+          </div>
+        </div>
+      </div>
+      <div class="sub"id="bord">
+        <h6>주변 놀거리</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/아차산/놀거리/구리시 고구려 대장간 마을/다운로드 (1).jpg"alt="고구려 대장간 마을" onclick="showOverlay('assets/imgs/아차산/놀거리/구리시 고구려 대장간 마을/다운로드 (1).jpg', '고구려 대장간 마을', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/13043905?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(31)">
+            <img class="thumbnail" src="assets/imgs/아차산/놀거리/빛의 시어터/다운로드 (1).jpg"alt="빛의 시어터" onclick="showOverlay('assets/imgs/아차산/놀거리/빛의 시어터/다운로드 (1).jpg', '빛의 시어터', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/1368948121?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(32)">
+            <img class="thumbnail" src="assets/imgs/아차산/놀거리/사가정공원/다운로드 (1).jpg" alt="사가정공원" onclick="showOverlay('assets/imgs/아차산/놀거리/사가정공원/다운로드 (1).jpg', '사가정공원', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/19588928?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(33)">
+            <img class="thumbnail" src="assets/imgs/아차산/놀거리/서울상상나라/다운로드 (1).jpg"alt="서울상상나라" onclick="showOverlay('assets/imgs/아차산/놀거리/서울상상나라/다운로드 (1).jpg', '서울상상나라', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/31949741?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(34)">
+            <img class="thumbnail" src="assets/imgs/아차산/놀거리/소울레터/다운로드 (1).jpg"alt="소울레터" onclick="showOverlay('assets/imgs/아차산/놀거리/소울레터/다운로드 (1).jpg', '소울레터', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EA%B3%B5%EB%B0%A9/place/1185333693?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(35)">
+            <img class="thumbnail" src="assets/imgs/아차산/놀거리/아차산 생태공원/다운로드 (1).jpg"alt="아차산 생태공원" onclick="showOverlay('assets/imgs/아차산/놀거리/아차산 생태공원/다운로드 (1).jpg', '아차산 생태공원', 'https://map.naver.com/v5/search/%EC%95%84%EC%B0%A8%EC%82%B0%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/12082220?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(36)">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <header class="heade" id="th">
+    <div class="container"></div>
+  </header>
+  <div class="container123">
+    <section class="section1">
+      <div class="gallery-container">
+        <div class="mainname">
+          <h6 id="imageName">하늘공원</h6>
+        </div>
+        <img class="main-image" id="mainImage3" src="assets/imgs/하늘공원/9.PNG" alt="하늘공원">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="assets/imgs/하늘공원/9.PNG" alt="하늘공원" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/하늘공원/2.PNG" alt="하늘공원" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/하늘공원/3.PNG" alt="하늘공원" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/하늘공원/4.PNG" alt="하늘공원" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/하늘공원/5.PNG" alt="하늘공원" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/하늘공원/6.PNG" alt="하늘공원" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/하늘공원/7.PNG" alt="하늘공원" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/하늘공원/8.PNG" alt="하늘공원" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/하늘공원/1.PNG" alt="하늘공원" onclick="changeMainImage(this)">
+          <!-- 나머지 작은 이미지들도 추가 -->
+        </div>
+        <div class="exp" id="imageDescription">
+          <br>
+          하늘공원이라는 이름의 공원들이 몇군데 있으며, 용도별로 다르기에 동음이의어로 처리했다.
+          <br>
+          일반적인 나들이를 위한 명소는 물론, 공원묘지도 존재한다.
+        </div>
+        <div class="exp1">
+          <button class="custom-button" onclick="openLinkSite5()">네이버 리뷰</button>
+          <button class="custom-button" onclick="openLinkSite6()">구글 리뷰&nbsp;</button>
+        </div>
+      </div>
+      <script>
+        function openLinkSite5() {
+          window.open("https://map.naver.com/v5/search/%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90/place/13219083?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=15,0,0,0,dh", "_blank");
+        }
+        function openLinkSite6() {
+          window.open("https://www.google.co.kr/search?q=%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90&sxsrf=APwXEdcbDm1IWTef4QRQHCENfVb23Ie_nQ%3A1684214608445&ei=UBNjZIDjGrmD1e8P85CsqAw&ved=0ahUKEwiAy9irjPn-AhW5QfUHHXMIC8UQ4dUDCA8&uact=5&oq=%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIQCC4QFBCvARDHARCHAhCABDIKCAAQgAQQFBCHAjIFCAAQgAQyBQgAEIAEMgUIABCABDILCC4QgAQQxwEQrwEyCwgAEIAEELEDEIMBMgUIABCABDIFCAAQgAQ6BwgjELADECc6CggAEEcQ1gQQsAM6AggmOgUIABCiBDoHCCMQ6gIQJzoQCAAQ4wQQ6QQQ6gIQtAIYAToQCC4Q4wQQ6QQQ6gIQtAIYAToWCC4Q4wQQ6QQQxwEQrwEQ6gIQtAIYAToRCC4QgAQQsQMQgwEQxwEQ0QM6DgguEIAEELEDEMcBENEDOgQIABADOgUILhCABDoOCC4QgAQQsQMQgwEQ1AI6CwguEIAEELEDEIMBOggILhCABBCxA0oECEEYAFDaDVikImD1I2gJcAF4B4ABkwKIAb0ckgEGMC4xNi40mAEAoAEBsAETyAEKwAEB2gEGCAEQARgB&sclient=gws-wiz-serp#rlimm=12208586948369296920", "_blank");
+        }
+        function changeMainImage(image) {
+          var mainImage = document.getElementById('mainImage3');
+          mainImage.src = image.src;
+          var imageNameElement = document.getElementById('imageName');
+          var imageName = image.alt;
+          imageNameElement.textContent = imageName;
+        }
+      </script>
+    </section>
+    <section class="section2">
+      <div class="sub">
+        <h6>주변 식당</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/하늘공원/식당/덕승재 상암본점/덕승재 상암본점1.jpg"alt="덕승재 상암본점" onclick="showOverlay('assets/imgs/하늘공원/식당/덕승재 상암본점/덕승재 상암본점1.jpg', '덕승재 상암본점', 'https://naver.me/GxORR6Bp'); imageClicked(37)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/식당/동신화로/동신화로1.jpg"alt="동신화로" onclick="showOverlay('assets/imgs/하늘공원/식당/동신화로/동신화로1.jpg', '동신화로', 'https://naver.me/xaPgOmGU'); imageClicked(38)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/식당/벽과담/벽과담1.jpg"alt="벽과담" onclick="showOverlay('assets/imgs/하늘공원/식당/벽과담/벽과담1.jpg', '벽과담', 'https://naver.me/xKQWNZyx'); imageClicked(39)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/식당/상암일미락/상암일미락1.jpg"alt="상암일미락" onclick="showOverlay('assets/imgs/하늘공원/식당/상암일미락/상암일미락1.jpg', '상암일미락', 'https://naver.me/5RctRHBX'); imageClicked(40)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/식당/옥소반 상암점/옥소반 상암점1.jpg"alt="옥소반 상암점" onclick="showOverlay('assets/imgs/하늘공원/식당/옥소반 상암점/옥소반 상암점1.jpg', '옥소반 상암점', 'https://naver.me/5qRAOl3k'); imageClicked(41)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/식당/옥자회관/옥자회관1.jpg"alt="옥자회관" onclick="showOverlay('assets/imgs/하늘공원/식당/옥자회관/옥자회관1.jpg', '옥자회관', 'https://naver.me/GC2uNYoj'); imageClicked(42)">
+          </div>
+        </div>
+      </div>
+      <div class="sub"id="bord">
+        <h6>주변 카페</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/하늘공원/카페/cafe TANK6/1.jpg"alt="cafe TANK6" onclick="showOverlay('assets/imgs/하늘공원/카페/cafe TANK6/1.jpg', 'cafe TANK6', 'https://naver.me/GBf5bbGe'); imageClicked(43)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/카페/물결한강/1.jpg"alt="물결한강" onclick="showOverlay('assets/imgs/하늘공원/카페/물결한강/1.jpg', '물결한강', 'https://naver.me/GI64Zp1W'); imageClicked(44)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/카페/바이어리셔/1.jpg"alt="바이어리셔" onclick="showOverlay('assets/imgs/하늘공원/카페/바이어리셔/1.jpg', '바이어리셔', 'https://naver.me/IFjiTFBy'); imageClicked(45)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/카페/베리빈/1.jpg"alt="베리빈" onclick="showOverlay('assets/imgs/하늘공원/카페/베리빈/1.jpg', '베리빈', 'https://naver.me/GLKAKHHh'); imageClicked(46)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/카페/엣모스피어/1.jpg"alt="엣모스피어" onclick="showOverlay('assets/imgs/하늘공원/카페/엣모스피어/1.jpg', '엣모스피어', 'https://naver.me/59jNOkdy'); imageClicked(47)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/카페/카페초이/1.jpg"alt="카페초이" onclick="showOverlay('assets/imgs/하늘공원/카페/카페초이/1.jpg', '카페초이', 'https://naver.me/xLEkSbMb'); imageClicked(48)">
+          </div>
+        </div>
+      </div>
+      <div class="sub"id="bord">
+        <h6>주변 놀거리</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/하늘공원/놀거리/DMC홍보관/DMC홍보관1.jpg"alt="DMC홍보관" onclick="showOverlay('assets/imgs/하늘공원/놀거리/DMC홍보관/DMC홍보관1.jpg', 'DMC홍보관', 'https://map.naver.com/v5/search/%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/18808247?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(49)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/놀거리/난지 한강공원/난지한강공원1.jpg"alt="난지 한강공원" onclick="showOverlay('assets/imgs/하늘공원/놀거리/난지 한강공원/난지한강공원1.jpg', '난지 한강공원', 'https://map.naver.com/v5/search/%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/13416975?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(50)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/놀거리/문화비축기지/문화비축기지1.jpg"alt="문화비축기지" onclick="showOverlay('assets/imgs/하늘공원/놀거리/문화비축기지/문화비축기지1.jpg', '문화비축기지', 'https://map.naver.com/v5/search/%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/701718829?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(51)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/놀거리/난지캠핑장/난지캠핑장1.jpg"alt="난지캠핑장" onclick="showOverlay('assets/imgs/하늘공원/놀거리/난지캠핑장/난지캠핑장1.jpg', '난지캠핑장', 'https://map.naver.com/v5/search/%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/11818239?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(52)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/놀거리/서울월드컵경기장/서울월드컵경기장1.jpg"alt="서울월드컵경기장" onclick="showOverlay('assets/imgs/하늘공원/놀거리/서울월드컵경기장/서울월드컵경기장1.jpg', '서울월드컵경기장', 'https://map.naver.com/v5/search/%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/11571843?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(53)">
+            <img class="thumbnail" src="assets/imgs/하늘공원/놀거리/어깨동무스토리움/어깨동무스토리움1.jpg"alt="어깨동무스토리움" onclick="showOverlay('assets/imgs/하늘공원/놀거리/어깨동무스토리움/어깨동무스토리움1.jpg', '어깨동무스토리움', 'https://map.naver.com/v5/search/%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90%20%EA%B7%BC%EC%B2%98%20%EB%86%80%EA%B1%B0%EB%A6%AC/place/1204011820?c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(54)">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <header class="endd">
+    <div class="container"></div>
+  </header>
+
+  <div id="loadingScreen" class="hidden">
+    <div class="loader"></div>
+  </div>
+  <!-- core  -->
+  <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+  <!-- bootstrap 3 affix -->
+  <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+  <script src="assets/js/nature_js.js"></script>
+</body>
+
+</html>
