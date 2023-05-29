@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with Steller landing page.">
+  <meta name="author" content="Devcrud">
+  <title>castone | plan-it</title>
+  <!-- font icons -->
+  <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+  <!-- Bootstrap + Steller main styles -->
+  <link rel="stylesheet" href="assets/css/railway_css.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+  <!-- Page navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/imgs/planit.jpg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link">
+              당신만을 위한 단 하나의 여행코스
+              <i class="icon ti-comments-smiley"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- End of page navibation -->
+
+  <!-- Page Header -->
+
+  <!-- Blog Section -->
+  <header class="heade" id="home">
+    <div class="container"></div>
+  </header>
+
+  <header class="header1" id="home">
+    <button onclick="scrollToTop()" class="scroll-top-button"><i class="icon ti-arrow-up"></i></button>
+
+    <div class="mainex">
+      <h6>&nbsp;&nbsp;&nbsp;이런 곳은 어때요?</h6>
+      <br>
+      <br>
+    </div>
+    <div class="container">
+      <div class="img-set">
+        <div class="img-1">
+          <h6>경의선 숲길</h6>
+          <a href="#fi">
+            <img class="slide2" src="assets/imgs/경의선숲길/1.PNG">
+          </a>
+        </div>
+        <div class="img-1">
+          <h6>경춘선 숲길</h6>
+          <a href="#se">
+            <img class="slide2" src="assets/imgs/경춘선숲길/경춘선숲길1.jpg">
+          </a>
+        </div>
+        <div class="img-1">
+          <h6>항동철길</h6>
+          <a href="#th">
+            <img class="slide2" src="assets/imgs/항동철길/항동철길1.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <header class="heade" id="fi">
+    <div class="container"></div>
+  </header>
+  <div class="container123">
+    <section class="section1">
+      <div id="overlay" class="overlay" onclick="hideOverlay()">
+        <img src="" alt="큰 이미지">
+        <p></p>
+        <button class="custom-button">네이버 리뷰</button>
+      </div>
+      <div class="gallery-container">
+        <div class="mainname">
+          <h6 id="imageName">경의선 숲길</h6>
+        </div>
+        <img class="main-image" id="mainImage1" src="assets/imgs/경의선숲길/1.PNG" alt="경의선 숲길">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="assets/imgs/경의선숲길/1.PNG" alt="경의선 숲길" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/경의선숲길/2.PNG" alt="경의선 숲길" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/경의선숲길/3.PNG" alt="경의선 숲길" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/경의선숲길/4.PNG" alt="경의선 숲길" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/경의선숲길/5.PNG" alt="경의선 숲길" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/경의선숲길/6.PNG" alt="경의선 숲길" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/경의선숲길/7.PNG" alt="경의선 숲길" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/경의선숲길/8.PNG" alt="경의선 숲길" onclick="changeMainImage1(this)">
+          <img class="thumbnail" src="assets/imgs/경의선숲길/9.PNG" alt="경의선 숲길" onclick="changeMainImage1(this)">
+          <!-- 나머지 작은 이미지들도 추가 -->
+        </div>
+        <div class="exp" id="imageDescription">
+          서울특별시 마포구 연남동 가좌역에서부터 용산구 효창동 효창공원앞역을 지나 원효로1동 주민센터까지 이어진 6.3km 길이의 공원.
+          <br>
+          옛 경의선(용산선) 폐철길을 공원으로 탈바꿈시킨 서울의 도시재생 프로젝트의 일환이다.
+          <br>
+        </div>
+        <div class="exp1">
+          <button class="custom-button" onclick="openLinkSite1()">네이버 리뷰</button>
+          <button class="custom-button" onclick="openLinkSite2()">구글 리뷰&nbsp;</button>
+        </div>
+      </div>
+
+
+      <script>
+        function openLinkSite1() {
+          window.open("https://map.naver.com/v5/entry/place/37992172?lng=126.9229824&lat=37.56195689999999&placePath=%2Freview%2Fugc&entry=plt", "_blank");
+        }
+        function openLinkSite2() {
+          window.open("https://www.google.com/search?q=%EA%B2%BD%EC%9D%98%EC%84%A0+%EC%88%B2%EA%B8%B8&sxsrf=APwXEdcyaKmhbfxVR1vwe9CKUD6tFWyRDQ%3A1684738180608&ei=hBBrZOTZJKa02roP8dWsiAc&ved=0ahUKEwjkq63mqoj_AhUmmlYBHfEqC3EQ4dUDCA8&uact=5&oq=%EA%B2%BD%EC%9D%98%EC%84%A0+%EC%88%B2%EA%B8%B8&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIQCC4QgAQQFBCHAhDHARCvATIKCAAQgAQQFBCHAjIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMh4ILhCABBAUEIcCEMcBEK8BEJcFENwEEN4EEOAEGAI6BwgjEIoFECc6DgguEIAEELEDEIMBENQCOgsIABCABBCxAxCDAToLCC4QgAQQsQMQgwE6DQguEIAEEMcBENEDEAo6EQguEIAEELEDEIMBEMcBENEDOgQIABADOggIABCABBCxAzoECC4QAzoHCAAQgAQQCjoFCC4QgAQ6CwguEIAEEMcBEK8BOgkIABCABBAKECo6CgguEIAEENQCEAo6DQgAEA0QgAQQsQMQgwE6BwgAEA0QgAQ6DQguEA0QgAQQxwEQrwE6BwgjEOoCECc6DQguEMcBENEDEOoCECc6EAgAEOMEEOkEEOoCELQCGAE6EwguEOMEEOkEENQCEOoCELQCGAE6BAgjECc6EAgAEIAEEBQQhwIQsQMQgwE6BwgAEIoFEENKBAhBGABQAFiuIGDNIWgKcAF4AYAB5QGIAdMbkgEGMC4xNy40mAEAoAEBsAETwAEB2gEGCAEQARgB2gEGCAIQARgU&sclient=gws-wiz-serp#rlimm=8271197056472690360", "_blank");
+        }
+        function changeMainImage1(image) {
+          var mainImage = document.getElementById('mainImage1');
+          mainImage.src = image.src;
+          var imageNameElement = document.getElementById('imageName');
+          var imageName = image.alt;
+          imageNameElement.textContent = imageName;
+
+        }
+      </script>
+    </section>
+    <section class="section2">
+
+      <div class="sub">
+        <h6>주변 맛집</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/식당/더담/1.PNG" onclick="showOverlay('assets/imgs/경의선숲길/식당/더담/5.PNG', '더담', 'https://map.naver.com/v5/search/%EA%B2%BD%EC%9D%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/21433628?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(1)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/식당/몽탄/1.PNG" onclick="showOverlay('assets/imgs/경의선숲길/식당/몽탄/1.jpeg', '몽탄', 'https://map.naver.com/v5/search/%EA%B2%BD%EC%9D%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1810277002?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(2)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/식당/미쁘동/1.PNG" onclick="showOverlay('assets/imgs/경의선숲길/식당/미쁘동/2.jpeg', '미쁘동', 'https://map.naver.com/v5/search/%EA%B2%BD%EC%9D%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1685805793?c=12,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(3)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/식당/빌라 더 다이닝/1.PNG" onclick="showOverlay('assets/imgs/경의선숲길/식당/빌라 더 다이닝.1.jpeg', '빌라 더 다이닝', 'https://map.naver.com/v5/search/%EA%B2%BD%EC%9D%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/637360725?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(4)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/식당/소이연남/1.PNG" onclick="showOverlay('assets/imgs/경의선숲길/식당/소이연남/1.jpeg', '소이연남', 'https://map.naver.com/v5/search/%EA%B2%BD%EC%9D%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/35402809?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(5)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/식당/수바이샹 훠궈/1.PNG" onclick="showOverlay('assets/imgs/경의선숲길/식당/수바이샹 훠궈/1.jpeg', '수바이샹 훠궈', 'https://map.naver.com/v5/search/%EA%B2%BD%EC%9D%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1179661211?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(6)">
+          </div>
+        </div>
+
+      </div>
+      <div class="sub" id="bord">
+        <h6>주변 카페</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/카페/미크플로 연트럴파크점/3.PNG" onclick="showOverlay('assets/imgs/경의선숲길/카페/미크플로 연트럴파크점/3.jpeg', '미크플로 연트럴파크점', 'https://naver.me/x3ifc64x'); imageClicked(7)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/카페/버터앤쉘터 연남점/5.PNG" onclick="showOverlay('assets/imgs/경의선숲길/카페/버터앤쉘터 연남점/5.png', '버터앤쉘터 연남점', 'https://naver.me/GA6FzeBq'); imageClicked(8)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/카페/아오이토리/4.PNG" onclick="showOverlay('assets/imgs/경의선숲길/카페/아오이토리/4.jpeg', '아오이토리', 'https://naver.me/GVAW8n8f'); imageClicked(9)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/카페/어더아사/2.PNG" onclick="showOverlay('assets/imgs/경의선숲길/카페/어더아사/2.jpeg', '어더아사', 'https://naver.me/xvLTzwGw'); imageClicked(10)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/카페/조앤도슨/4.PNG" onclick="showOverlay('assets/imgs/경의선숲길/카페/조앤도슨/4.jpeg', '조앤도슨', 'https://naver.me/x35MlBLG'); imageClicked(11)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/카페/청수당공명/2.PNG" onclick="showOverlay('assets/imgs/경의선숲길/카페/청수당공명/2.jpeg', '청수당공명', 'https://naver.me/xKQcnmKY'); imageClicked(12)">
+          </div>
+        </div>
+      </div>
+      <div class="sub" id="bord">
+        <h6>주변 놀거리</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/놀거리/CR Collective/5.PNG" onclick="showOverlay('assets/imgs/경의선숲길/놀거리/CR Collective/5.jpeg', 'CR Collective', 'https://map.naver.com/v5/search/CR%20Collective/place/49072062?entry=plt&c=15,0,0,0,dh&isCorrectAnswer=true'); imageClicked(13)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/놀거리/도토리 캐리커쳐/2.PNG" onclick="showOverlay('assets/imgs/경의선숲길/놀거리/도토리 캐리커쳐/2.jpeg', '도토리 캐리커쳐', 'https://map.naver.com/v5/search/%EB%8F%84%ED%86%A0%EB%A6%AC%20%EC%BA%90%EB%A6%AC%EC%BB%A4%EC%B3%90/place/1663897441?entry=plt&c=15,0,0,0,dh&isCorrectAnswer=true'); imageClicked(14)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/놀거리/서울콜렉터/1.PNG" onclick="showOverlay('assets/imgs/경의선숲길/놀거리/서울콜렉터/1.jpeg', '서울콜렉터', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%BD%9C%EB%A0%89%ED%84%B0/place/1307928352?entry=plt&c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(15)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/놀거리/세컨드스튜디오/3.PNG" onclick="showOverlay('assets/imgs/경의선숲길/놀거리/세컨드스튜디오/3.jpeg', '세컨드스튜디오', 'https://map.naver.com/v5/search/%EC%84%B8%EC%BB%A8%EB%93%9C%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4/place/13082154?entry=plt&c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(16)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/놀거리/셀피스트 셀프사진관 홍대/4.PNG" onclick="showOverlay('assets/imgs/경의선숲길/놀거리/셀피스트 셀프사진관 홍대/4.jpeg', '셀피스트 셀프사진관 홍대', 'https://map.naver.com/v5/search/%EC%85%80%ED%94%BC%EC%8A%A4%ED%8A%B8%20%EC%85%80%ED%94%84%EC%82%AC%EC%A7%84%EA%B4%80%20%ED%99%8D%EB%8C%80/place/1804449640?entry=plt&c=15,0,0,0,dh&isCorrectAnswer=true'); imageClicked(17)">
+            <img class="thumbnail" src="assets/imgs/경의선숲길/놀거리/연남스페이스/3.PNG" onclick="showOverlay('assets/imgs/경의선숲길/놀거리/연남스페이스/3.jpeg', '연남스페이스', 'https://map.naver.com/v5/search/%EC%97%B0%EB%82%A8%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4/place/1275394668?entry=plt&c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(18)">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <header class="heade" id="se">
+    <div class="container"></div>
+  </header>
+
+  <div class="container123">
+    <section class="section1">
+      <div class="gallery-container">
+        <div class="mainname">
+          <h6 id="imageName">경춘선숲길</h6>
+        </div>
+        <img class="main-image" id="mainImage2" src="assets/imgs/경춘선숲길/경춘선숲길1.jpg" alt="경춘선숲길">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="assets/imgs/경춘선숲길/경춘선숲길1.jpg" alt="경춘선숲길" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/경춘선숲길/경춘선숲길2.jpg" alt="경춘선숲길" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/경춘선숲길/경춘선숲길3.jpg" alt="경춘선숲길" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/경춘선숲길/경춘선숲길4.jpg" alt="경춘선숲길" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/경춘선숲길/경춘선숲길5.jpg" alt="경춘선숲길" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/경춘선숲길/경춘선숲길6.jpg" alt="경춘선숲길" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/경춘선숲길/경춘선숲길7.jpg" alt="경춘선숲길" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/경춘선숲길/경춘선숲길8.jpg" alt="경춘선숲길" onclick="changeMainImage2(this)">
+          <img class="thumbnail" src="assets/imgs/경춘선숲길/경춘선숲길9.jpg" alt="경춘선숲길" onclick="changeMainImage2(this)">
+          <!-- 나머지 작은 이미지들도 추가 -->
+        </div>
+        <div class="exp" id="imageDescription">
+          
+          경춘선 숲길은 서울특별시 노원구 월계동 광운대역 일대에서부터 
+          공릉동과 화랑대역을 지나 담터마을 인근까지 이어진 5.4km 길이의 공원이다.
+          <br>
+          옛 경춘선(성북역 ~ 퇴계원역) 구간의 폐철길을 공원으로 탈바꿈시킨 서울의 도시재생 프로젝트의 일환이다.
+          <br>
+        </div>
+        <div class="exp1">
+          <button class="custom-button" onclick="openLinkSite3()">네이버 리뷰</button>
+          <button class="custom-button" onclick="openLinkSite4()">구글 리뷰&nbsp;</button>
+        </div>
+      </div>
+
+
+      <script>
+        function openLinkSite3() {
+          window.open("https://map.naver.com/v5/entry/place/13513620?lng=126.97531279850234&lat=37.56670163834473&placePath=%2F&entry=plt&c=15,0,0,0,dh", "_blank");
+        }
+        function openLinkSite4() {
+          window.open("https://www.google.com/search?q=%EB%8D%95%EC%88%98%EA%B6%81%EB%8F%8C%EB%8B%B4%EA%B8%B8&sxsrf=APwXEdfNy-mAQ99Wm-CxM4gehYwrM1ILeQ%3A1684735526829&ei=JgZrZISbMraT1e8P2aeD6AU&ved=0ahUKEwiExvf0oIj_AhW2SfUHHdnTAF0Q4dUDCA8&uact=5&oq=%EB%8D%95%EC%88%98%EA%B6%81%EB%8F%8C%EB%8B%B4%EA%B8%B8&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyCgguEIAEEBQQhwIyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIGCAAQHhAPMgYIABAHEB4yCAgAEAcQHhAPOgoIABBHENYEELADSgQIQRgAUIECWMAFYL8HaAFwAHgAgAGTAYgBhAaSAQMxLjWYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp#lrd=0x357ca3b0f8b0aeeb:0xe227af987f6d3209,1,,,,", "_blank");
+        }
+        function changeMainImage2(image) {
+          var mainImage = document.getElementById('mainImage2');
+          mainImage.src = image.src;
+          var imageNameElement = document.getElementById('imageName');
+          var imageName = image.alt;
+          imageNameElement.textContent = imageName;
+        }
+      </script>
+    </section>
+    <section class="section2">
+
+      <div class="sub">
+        <h6>주변 맛집</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/식당/경복식당/경복식당5.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/식당/경복식당/경복식당5.jpeg', '경복식당', 'https://map.naver.com/v5/search/%EA%B2%BD%EC%B6%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1797596093?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(1)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/식당/경성초밥/경성초밥5.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/식당/경성초밥/경성초밥5.jpeg', '경성초밥', 'https://map.naver.com/v5/search/%EA%B2%BD%EC%B6%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1453394676?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(2)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/식당/공릉동도깨비/공릉동도깨비4.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/식당/공릉동도깨비/공릉동도깨비4.jpeg', '공릉동도깨비', 'https://map.naver.com/v5/search/%EA%B2%BD%EC%B6%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/460447110?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(3)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/식당/동적깡통구이 태릉입구역점/동적깡통구이 탱릉입구역점5.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/식당/동적깡통구이 태릉입구역점/동적깡통구이 태릉입구역점5', '동적깡통구이 태릉입구역점', 'https://map.naver.com/v5/search/%EA%B2%BD%EC%B6%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1480430382?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(4)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/식당/메모아/메모아2.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/식당/메모아/메모아2.jpeg', '메모아', 'https://map.naver.com/v5/search/%EA%B2%BD%EC%B6%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1024231099?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(5)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/식당/메트로폴리스/메트로폴리스5.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/식당/메트로폴리스/메트로폴리스5.jpeg', '메트로폴리스', 'hhttps://map.naver.com/v5/search/%EA%B2%BD%EC%B6%98%EC%84%A0%20%EC%88%B2%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1815424144?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(6)">
+          </div>
+        </div>
+
+      </div>
+      <div class="sub" id="bord">
+        <h6>주변 카페</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/카페/그루브커피로스터즈/그루브커피로스터즈4.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/카페/그루브커피로스터즈/크루브커피로스터즈4.jpeg', '그루브커피리로스터즈', 'https://naver.me/FrKAAWXx'); imageClicked(7)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/카페/리아트커피바/리아트커피바4.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/카페/리아트커피바/리아트커피바4.jpeg', '리아트커피바', 'https://naver.me/G9RZ2qmJ'); imageClicked(8)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/카페/블루마일스커피로스터즈/블루마일스커피로스터즈5.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/카페/블루마일스커피로스터즈/블루마일스커피로스터즈5.jpeg', '블루마일스커피로스터즈', 'https://naver.me/xrP66XM2'); imageClicked(9)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/카페/비기닝브레드/비기닝브레드4.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/카페/비기닝브레드/비기닝브레드4.jpeg', '비기닝브레드', 'https://naver.me/Gd1UDn4K'); imageClicked(10)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/카페/상상과자점/상상과자점3.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/카페/상상과자점/상상과자점3.jpeg', '상상과자점', 'https://naver.me/GjRGdYlW'); imageClicked(11)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/카페/오누이/오누이5.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/카페/오누이/오누이5.jpeg', '오누이', 'https://naver.me/GC2ufDmg'); imageClicked(12)">
+          </div>
+        </div>
+      </div>
+      <div class="sub" id="bord">
+        <h6>주변 놀거리</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/놀거리/노원문화의거리/노원문화의거리1.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/놀거리/노원문화의거리/노원문화의거리1.jpeg', '노원문화의거리', 'https://map.naver.com/v5/search/%EB%85%B8%EC%9B%90%EB%AC%B8%ED%99%94%EC%9D%98%EA%B1%B0%EB%A6%AC/place/18643761?entry=plt&c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(13)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/놀거리/불빛정원/불빛정원2.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/놀거리/불빛정원/불빛정원2.jpeg', '불빛정원', 'https://map.naver.com/v5/search/%EB%B6%88%EB%B9%9B%EC%A0%95%EC%9B%90/place/1200984778?entry=plt&c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(14)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/놀거리/불암산/불암산2.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/놀거리/불암산/불암산2.jpeg', '불암산', 'https://map.naver.com/v5/search/%EB%B6%88%EC%95%94%EC%82%B0/place/13491957?entry=plt&c=7,0,0,0,dh&placePath=%3Fentry=bmp'); imageClicked(15)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/놀거리/서울시립과학관/서울시립과학관4.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/놀거리/서울시립과학관/서울시립과학관4.jpeg', '서울시립과학관', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%A6%BD%EA%B3%BC%ED%95%99%EA%B4%80/place/515824798?entry=plt&c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(16)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/놀거리/육군박물관/육군박물관1.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/놀거리/육군박물관/육군박물관1.jpeg', '육군박물관', 'https://map.naver.com/v5/search/%EC%9C%A1%EA%B5%B0%EB%B0%95%EB%AC%BC%EA%B4%80/place/11784466?entry=plt&c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(17)">
+            <img class="thumbnail" src="assets/imgs/경춘선숲길/놀거리/중계근린공원/중계근린공원2.jpg" onclick="showOverlay('assets/imgs/경춘선숲길/놀거리/중계근린공원/중계근린공원2.jpeg', '중계근린공원', 'https://map.naver.com/v5/search/%EC%A4%91%EA%B3%84%EA%B7%BC%EB%A6%B0%EA%B3%B5%EC%9B%90/place/20495042?entry=plt&c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(18)">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <header class="heade" id="th">
+    <div class="container"></div>
+  </header>
+  <div class="container123">
+    <section class="section1">
+      <div class="gallery-container">
+        <div class="mainname">
+          <h6 id="imageName">항동철길</h6>
+        </div>
+        <img class="main-image" id="mainImage3" src="assets/imgs/항동철길/항동철길1.jpg" alt="항동철길">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="assets/imgs/항동철길/항동철길1.jpg" alt="항동철길" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/항동철길/항동철길2.jpg" alt="항동철길" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/항동철길/항동철길3.jpg" alt="항동철길" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/항동철길/항동철길4.jpg" alt="항동철길" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/항동철길/항동철길5.jpg" alt="항동철길" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/항동철길/항동철길6.jpg" alt="항동철길" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/항동철길/항동철길7.jpg" alt="항동철길" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/항동철길/항동철길8.jpg" alt="항동철길" onclick="changeMainImage(this)">
+          <img class="thumbnail" src="assets/imgs/항동철길/항동철길9.jpg" alt="항동철길" onclick="changeMainImage(this)">
+          <!-- 나머지 작은 이미지들도 추가 -->
+        </div>
+        <div class="exp" id="imageDescription">
+          
+          항동철길이라는 이름의 공원들이 몇군데 있으며, 용도별로 다르기에 동음이의어로 처리했다.
+          <br>
+          일반적인 나들이를 위한 명소는 물론, 공원묘지도 존재한다.
+        </div>
+        <div class="exp1">
+          <button class="custom-button" onclick="openLinkSite5()">네이버 리뷰</button>
+          <button class="custom-button" onclick="openLinkSite6()">구글 리뷰&nbsp;</button>
+        </div>
+      </div>
+      <script>
+        function openLinkSite5() {
+          window.open("https://map.naver.com/v5/search/%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90/place/13219083?placePath=%3Fentry=pll%26from=nx%26fromNxList=true&c=15,0,0,0,dh", "_blank");
+        }
+        function openLinkSite6() {
+          window.open("https://www.google.co.kr/search?q=%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90&sxsrf=APwXEdcbDm1IWTef4QRQHCENfVb23Ie_nQ%3A1684214608445&ei=UBNjZIDjGrmD1e8P85CsqAw&ved=0ahUKEwiAy9irjPn-AhW5QfUHHXMIC8UQ4dUDCA8&uact=5&oq=%ED%95%98%EB%8A%98%EA%B3%B5%EC%9B%90&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIHCCMQigUQJzIQCC4QFBCvARDHARCHAhCABDIKCAAQgAQQFBCHAjIFCAAQgAQyBQgAEIAEMgUIABCABDILCC4QgAQQxwEQrwEyCwgAEIAEELEDEIMBMgUIABCABDIFCAAQgAQ6BwgjELADECc6CggAEEcQ1gQQsAM6AggmOgUIABCiBDoHCCMQ6gIQJzoQCAAQ4wQQ6QQQ6gIQtAIYAToQCC4Q4wQQ6QQQ6gIQtAIYAToWCC4Q4wQQ6QQQxwEQrwEQ6gIQtAIYAToRCC4QgAQQsQMQgwEQxwEQ0QM6DgguEIAEELEDEMcBENEDOgQIABADOgUILhCABDoOCC4QgAQQsQMQgwEQ1AI6CwguEIAEELEDEIMBOggILhCABBCxA0oECEEYAFDaDVikImD1I2gJcAF4B4ABkwKIAb0ckgEGMC4xNi40mAEAoAEBsAETyAEKwAEB2gEGCAEQARgB&sclient=gws-wiz-serp#rlimm=12208586948369296920", "_blank");
+        }
+        function changeMainImage(image) {
+          var mainImage = document.getElementById('mainImage3');
+          mainImage.src = image.src;
+          var imageNameElement = document.getElementById('imageName');
+          var imageName = image.alt;
+          imageNameElement.textContent = imageName;
+        }
+      </script>
+    </section>
+    <section class="section2">
+      <div class="sub">
+        <h6>주변 식당</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/항동철길/식당/바른숯불구이/바른숯불구이5.jpg" onclick="showOverlay('assets/imgs/항동철길/식당/바른숯불구이/바른숯불구이5.jpg', '바른숯불구이', 'https://map.naver.com/v5/search/%ED%95%AD%EB%8F%99%EC%B2%A0%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/36886895?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(37)">
+            <img class="thumbnail" src="assets/imgs/항동철길/식당/병규네부대찌개/병규네부대찌개4.jpg" onclick="showOverlay('assets/imgs/항동철길/식당/병규네부대찌개/병규네부대찌개4.jpg', '병규네부대찌개', 'https://map.naver.com/v5/search/%ED%95%AD%EB%8F%99%EC%B2%A0%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/517974102?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(38)">
+            <img class="thumbnail" src="assets/imgs/항동철길/식당/사생활/사생활3.jpg" onclick="showOverlay('assets/imgs/항동철길/식당/사생활/사생활3.jpg', '사생활', 'https://map.naver.com/v5/search/%ED%95%AD%EB%8F%99%EC%B2%A0%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1713322772?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(39)">
+            <img class="thumbnail" src="assets/imgs/항동철길/식당/스테이플버거/스테이플버거4.jpg" onclick="showOverlay('assets/imgs/항동철길/식당/스테이플버거/스테이플버거4.jpg', '스테이플버거', 'https://map.naver.com/v5/search/%ED%95%AD%EB%8F%99%EC%B2%A0%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1112634672?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(40)">
+            <img class="thumbnail" src="assets/imgs/항동철길/식당/옹기종기감자옹심이/옹기종기감자옹심이5.jpg" onclick="showOverlay('assets/imgs/항동철길/식당/옹기종기감자옹심이/옹기종기감자옹심이5.jpg', '옹기종기감자옹심이', 'https://map.naver.com/v5/search/%ED%95%AD%EB%8F%99%EC%B2%A0%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/1904170793?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(41)">
+            <img class="thumbnail" src="assets/imgs/항동철길/식당/족발집 오류점/족발집 오류점4.jpg" onclick="showOverlay('assets/imgs/항동철길/식당/족발집 오류점/족발집 오류점4.jpg', '족발집 오류점', 'https://map.naver.com/v5/search/%ED%95%AD%EB%8F%99%EC%B2%A0%EA%B8%B8%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91/place/38457146?c=15,0,0,0,dh&placePath=%3Fentry%253Dpll'); imageClicked(42)">
+          </div>
+        </div>
+      </div>
+      <div class="sub"id="bord">
+        <h6>주변 카페</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/항동철길/카페/12NOI/12NOI5.jpg" onclick="showOverlay('assets/imgs/항동철길/카페/12NOI/12NOI5.jpg', '12NOI', 'https://naver.me/58H3OWSx'); imageClicked(43)">
+            <img class="thumbnail" src="assets/imgs/항동철길/카페/BCDM/BCDM5.jpg" onclick="showOverlay('assets/imgs/항동철길/카페/BCDM/BCDM5.jpg', 'BCDM', 'https://naver.me/IIqDI7ba'); imageClicked(44)">
+            <img class="thumbnail" src="assets/imgs/항동철길/카페/마라나타/마라나타3.jpg" onclick="showOverlay('assets/imgs/항동철길/카페/마라나타/마라나타3.jpg', '마라나타', 'https://naver.me/5jAjWsMF'); imageClicked(45)">
+            <img class="thumbnail" src="assets/imgs/항동철길/카페/마프라오/마프라오4.jpg" onclick="showOverlay('assets/imgs/항동철길/카페/마프라오/마프라오4.jpg', '마프라오', 'https://naver.me/GJr5Ua9r'); imageClicked(46)">
+            <img class="thumbnail" src="assets/imgs/항동철길/카페/메이로드/메이로드5.jpg" onclick="showOverlay('assets/imgs/항동철길/카페/메이로드/메이로드5.jpg', '메이로드', 'https://naver.me/FFvSHeId'); imageClicked(47)">
+            <img class="thumbnail" src="assets/imgs/항동철길/카페/씬(scene)/씬(scene)4.jpg" onclick="showOverlay('assets/imgs/항동철길/카페/씬(scene)/씬(scene)4.jpg', '씬(scene)', 'https://naver.me/I5F4DyrX'); imageClicked(48)">
+          </div>
+        </div>
+      </div>
+      <div class="sub"id="bord">
+        <h6>주변 놀거리</h6>
+        <div class="thumbnail-container">
+          <div class="thumbnail-slider">
+            <img class="thumbnail" src="assets/imgs/항동철길/놀거리/고척근린공원/고척근린공원5.jpg" onclick="showOverlay('assets/imgs/항동철길/놀거리/고척근린공원/고척근린공원5.jpg', '고척근린공원', 'https://map.naver.com/v5/search/%EA%B3%A0%EC%B2%99%EA%B7%BC%EB%A6%B0%EA%B3%B5%EC%9B%90/place/18966242?entry=plt&c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(49)">
+            <img class="thumbnail" src="assets/imgs/항동철길/놀거리/구로근린공원/구로근린공원4.jpg" onclick="showOverlay('assets/imgs/항동철길/놀거리/구로근린공원/구로근린공원4.jpg', '구로근린공원', 'https://map.naver.com/v5/search/%EA%B5%AC%EB%A1%9C%EA%B1%B0%EB%A6%AC%EA%B3%B5%EC%9B%90/place/18961525?entry=plt&c=15,0,0,0,dh&placePath=%3Fentry%253Dbmp'); imageClicked(50)">
+            <img class="thumbnail" src="assets/imgs/항동철길/놀거리/대성디큐브아트센터/대성디큐브아트센터1.jpg" onclick="showOverlay('assets/imgs/항동철길/놀거리/대성디큐브아트센터/대성디큐브아트센터1.jpg', '대성디큐브아트센터', 'https://map.naver.com/v5/search/%EB%8C%80%EC%84%B1%20%EB%94%94%ED%81%90%EB%B8%8C%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0/place/20152049?entry=plt&c=15,0,0,0,dh&isCorrectAnswer=true'); imageClicked(51)">
+            <img class="thumbnail" src="assets/imgs/항동철길/놀거리/서울아트책보고/서울아트책보고1.jpg" onclick="showOverlay('assets/imgs/항동철길/놀거리/서울아트책보고/서울아트책보고1.jpg', '서울아트책보고', 'https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%95%84%ED%8A%B8%EC%B1%85%EB%B3%B4%EA%B3%A0/place/1770726112?entry=plt&c=15,0,0,0,dh&isCorrectAnswer=true'); imageClicked(52)">
+            <img class="thumbnail" src="assets/imgs/항동철길/놀거리/캘리클럽 고척점/캘리클럽 고척점5.jpg" onclick="showOverlay('assets/imgs/항동철길/놀거리/캘리클럽 고척점/캘리클럽 고척점5.jpg', '캘리클럽 고척점', 'https://map.naver.com/v5/search/%EC%BA%98%EB%A6%AC%ED%81%B4%EB%9F%BD%20%EA%B3%A0%EC%B2%99%EC%A0%90/place/1410252669?entry=plt&c=15,0,0,0,dh&isCorrectAnswer=true'); imageClicked(53)">
+            <img class="thumbnail" src="assets/imgs/항동철길/놀거리/푸른수목원/푸른수목원4.jpg" onclick="showOverlay('assets/imgs/항동철길/놀거리/푸른수목원/푸른수목원4.jpg', '푸른수목원', 'https://map.naver.com/v5/search/%ED%91%B8%EB%A5%B8%EC%88%98%EB%AA%A9%EC%9B%90/place/32581850?entry=plt&c=15,0,0,0,dh&placePath=%3Fentry=bmp'); imageClicked(54)">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <header class="endd">
+    <div class="container"></div>
+  </header>
+
+  <div id="loadingScreen" class="hidden">
+    <div class="loader"></div>
+  </div>
+  <!-- core  -->
+  <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+  <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+  <!-- bootstrap 3 affix -->
+  <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+  <script src="assets/js/railway_js.js"></script>
+</body>
+
+</html>
