@@ -77,7 +77,7 @@ $(document).ready(() => {
         window.location.href = '/sunset.html';
       }
       if (data.includes('theater')) {
-        window.location.href = '/cherryblossom.html';
+        window.location.href = '/theater.html';
       }
       if (data.includes('traditional_culture')) {
         window.location.href = '/traditional_culture.html';
